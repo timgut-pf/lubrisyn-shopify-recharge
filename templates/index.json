@@ -1,0 +1,1295 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "aa66337f-82f0-4c84-aea6-b5ef91ad5d40": {
+      "type": "animated-image-collage",
+      "blocks": {
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-1": {
+          "type": "column",
+          "settings": {
+            "image_width": 420
+          }
+        },
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-2": {
+          "type": "column",
+          "settings": {
+            "image_width": 420
+          }
+        },
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-3": {
+          "type": "column",
+          "settings": {
+            "image_width": 420
+          }
+        },
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-4": {
+          "type": "column",
+          "settings": {
+            "image_width": 420
+          }
+        },
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-5": {
+          "type": "column",
+          "settings": {
+            "image_width": 420
+          }
+        },
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-6": {
+          "type": "column",
+          "settings": {
+            "image_width": 420
+          }
+        },
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-7": {
+          "type": "column",
+          "settings": {
+            "image_width": 420
+          }
+        },
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-8": {
+          "type": "column",
+          "settings": {
+            "image_width": 420
+          }
+        }
+      },
+      "block_order": [
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-1",
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-2",
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-3",
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-4",
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-5",
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-6",
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-7",
+        "template--15231063785533__aa66337f-82f0-4c84-aea6-b5ef91ad5d40-column-8"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_type": "right",
+        "color_scheme": "background-2",
+        "header_overlay": true,
+        "header_transparent": false,
+        "column_to_show": 3,
+        "opacity_overlay": 0.3,
+        "full_width": true,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_style": "contrast",
+        "icon_fill_type": "gradient",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "subheading": "5.00 from 144+ reviews",
+        "subheading_style": "subtitle subtitle--secondary",
+        "subheading_icon": "star",
+        "heading": "<span style=\"text-decoration:underline\">Durable & Stylish</span> Sport Bottles for Everyday Wellness",
+        "heading_size": "h1",
+        "heading_level": "h2",
+        "heading_line": "rounded",
+        "line_color": "#08b275",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Shop bottles made for convenience, style, and sustainability, perfect for wherever life takes you.",
+        "enable_subscribe": false,
+        "button_label_subscribe": "Label",
+        "color_scheme_subscribe": "",
+        "enable_box_shadow": true,
+        "button_style_subscribe": "primary",
+        "show_button": true,
+        "button_label": "Shop All",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": true,
+        "button_label_2": "See More",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "aa5a0c19-0cfc-41ab-872f-97abcbcb7c93": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16479994478723__aa5a0c19-0cfc-41ab-872f-97abcbcb7c93-column-1": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "enable_link": false,
+            "link": "",
+            "heading": "Insulated Technology",
+            "text": "<p>Our bottles keep your drinks at the perfect temperature, hot or cold, for several hours on end.</p>",
+            "show_button": true,
+            "button_label": "Shop Now",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "template--16479994478723__aa5a0c19-0cfc-41ab-872f-97abcbcb7c93-column-2": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "enable_link": false,
+            "link": "",
+            "heading": "Leak-Proof Design",
+            "text": "<p>Say goodbye to spills! Our bottles feature a secure, leak-proof lid, ensuring no mess, no stress.</p>",
+            "show_button": true,
+            "button_label": "Know More",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "template--16479994478723__aa5a0c19-0cfc-41ab-872f-97abcbcb7c93-column-3": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "enable_link": false,
+            "link": "",
+            "heading": "Eco-Friendly Materials",
+            "text": "<p>Made with sustainable, BPA-free materials, our bottles help reduce waste and protect the environment.</p>",
+            "show_button": true,
+            "button_label": "Know More",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "template--16479994478723__aa5a0c19-0cfc-41ab-872f-97abcbcb7c93-column-1",
+        "template--16479994478723__aa5a0c19-0cfc-41ab-872f-97abcbcb7c93-column-2",
+        "template--16479994478723__aa5a0c19-0cfc-41ab-872f-97abcbcb7c93-column-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_type": "transparent",
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 3,
+        "content_horizontal_alignment": "left",
+        "content_vertical_alignment": "top",
+        "gap": "small",
+        "enable_mobile_overflow_slider": false,
+        "subheading": "Features",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "The Perfect Bottle for You",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "<p>Check out the standout features of our range of bottles.</p>",
+        "text_align": "left",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "image_width": "full-width",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h5",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "dbbd77aa-b38d-4df0-a757-03142a78e36b": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--15231063785533__dbbd77aa-b38d-4df0-a757-03142a78e36b-column-1": {
+          "type": "column",
+          "settings": {
+            "icon": "water-1",
+            "icon_fill_type": "gradient",
+            "heading": "Double Wall of Insulation",
+            "text": "Drinks warm for 12 hours / cold for 24."
+          }
+        },
+        "template--15231063785533__dbbd77aa-b38d-4df0-a757-03142a78e36b-column-2": {
+          "type": "column",
+          "settings": {
+            "icon": "wave-1",
+            "icon_fill_type": "gradient",
+            "heading": "Leak-Proof Lid with Cap",
+            "text": "For a quick hydration. 100% insulating."
+          }
+        },
+        "template--15231063785533__dbbd77aa-b38d-4df0-a757-03142a78e36b-column-3": {
+          "type": "column",
+          "settings": {
+            "icon": "medicine",
+            "icon_fill_type": "gradient",
+            "heading": "Silicone Base",
+            "text": "Protection against bumps and falls."
+          }
+        },
+        "template--15231063785533__dbbd77aa-b38d-4df0-a757-03142a78e36b-column-4": {
+          "type": "column",
+          "settings": {
+            "icon": "leaf",
+            "icon_fill_type": "gradient",
+            "heading": "BPA-Free",
+            "text": "No bisphenol. Eco-Friendly bottle."
+          }
+        }
+      },
+      "block_order": [
+        "template--15231063785533__dbbd77aa-b38d-4df0-a757-03142a78e36b-column-1",
+        "template--15231063785533__dbbd77aa-b38d-4df0-a757-03142a78e36b-column-2",
+        "template--15231063785533__dbbd77aa-b38d-4df0-a757-03142a78e36b-column-3",
+        "template--15231063785533__dbbd77aa-b38d-4df0-a757-03142a78e36b-column-4"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "image_center",
+        "color_scheme": "background-2",
+        "subheading": "Characteristics",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "We Help You Save <span style=\"text-decoration:underline\">What Matters</span> Most: Time, Money and The Planet",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "rounded",
+        "line_color": "#08b275",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "You're making a conscious decision that prioritizes your well-being.",
+        "text_align": "center",
+        "inner_subheading": "",
+        "inner_heading": "",
+        "inner_heading_size": "h2",
+        "inner_heading_level": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "",
+        "text_align_inner": "top",
+        "enable_link": false,
+        "link": "",
+        "height": "adapt",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "show_button": true,
+        "button_label": "Shop All",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "2bb1e645-010e-42e3-ad1e-5e5a07cdae3f": {
+      "type": "steps",
+      "blocks": {
+        "template--16479994478723__2bb1e645-010e-42e3-ad1e-5e5a07cdae3f-step-1": {
+          "type": "step",
+          "settings": {
+            "number": "",
+            "heading": "Explore & Discover",
+            "text": "Explore an extensive collection and discover the perfect bottle to elevate your drinking experience. Uncover your next favorite drink.",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        },
+        "template--16479994478723__2bb1e645-010e-42e3-ad1e-5e5a07cdae3f-step-2": {
+          "type": "step",
+          "settings": {
+            "number": "",
+            "heading": "Customize & Enhance",
+            "text": "Choose the size, adjust the intensity, or add a splash of flavor. Want it chilled or with added nutritional boosts?",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        },
+        "template--16479994478723__2bb1e645-010e-42e3-ad1e-5e5a07cdae3f-step-3": {
+          "type": "step",
+          "settings": {
+            "number": "",
+            "heading": "Order & Relish",
+            "text": "Whether you're picking up in-store or opting for swift delivery service, ensure that your bottles reach you just the way you like them.",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16479994478723__2bb1e645-010e-42e3-ad1e-5e5a07cdae3f-step-1",
+        "template--16479994478723__2bb1e645-010e-42e3-ad1e-5e5a07cdae3f-step-2",
+        "template--16479994478723__2bb1e645-010e-42e3-ad1e-5e5a07cdae3f-step-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "slider",
+        "enable_arrows": true,
+        "color_scheme": "",
+        "subheading": "Steps",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Quenching Your Thirst in Three Steps",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Navigate our collection, customize your choices, and let us handle the rest.",
+        "text_align": "left",
+        "columns_to_show": 3,
+        "image_ratio": "adapt",
+        "number_size": "recommended",
+        "step_heading_size": "recommended",
+        "text_size": "recommended",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "5c94bd84-824f-4368-a89e-e1a1cdccf6d3": {
+      "type": "logo-list",
+      "blocks": {
+        "template--15231063785533__5c94bd84-824f-4368-a89e-e1a1cdccf6d3-logo-1": {
+          "type": "logo",
+          "settings": {
+            "image_width": 125,
+            "logo_link": ""
+          }
+        },
+        "template--15231063785533__5c94bd84-824f-4368-a89e-e1a1cdccf6d3-logo-3": {
+          "type": "logo",
+          "settings": {
+            "image_width": 140,
+            "logo_link": ""
+          }
+        },
+        "template--15231063785533__5c94bd84-824f-4368-a89e-e1a1cdccf6d3-logo-2": {
+          "type": "logo",
+          "settings": {
+            "image_width": 130,
+            "logo_link": ""
+          }
+        },
+        "template--15231063785533__5c94bd84-824f-4368-a89e-e1a1cdccf6d3-logo-4": {
+          "type": "logo",
+          "settings": {
+            "image_width": 140,
+            "logo_link": ""
+          }
+        },
+        "template--15231063785533__5c94bd84-824f-4368-a89e-e1a1cdccf6d3-logo-5": {
+          "type": "logo",
+          "settings": {
+            "image_width": 140,
+            "logo_link": ""
+          }
+        },
+        "template--15231063785533__5c94bd84-824f-4368-a89e-e1a1cdccf6d3-logo-6": {
+          "type": "logo",
+          "settings": {
+            "image_width": 140,
+            "logo_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15231063785533__5c94bd84-824f-4368-a89e-e1a1cdccf6d3-logo-1",
+        "template--15231063785533__5c94bd84-824f-4368-a89e-e1a1cdccf6d3-logo-3",
+        "template--15231063785533__5c94bd84-824f-4368-a89e-e1a1cdccf6d3-logo-2",
+        "template--15231063785533__5c94bd84-824f-4368-a89e-e1a1cdccf6d3-logo-4",
+        "template--15231063785533__5c94bd84-824f-4368-a89e-e1a1cdccf6d3-logo-5",
+        "template--15231063785533__5c94bd84-824f-4368-a89e-e1a1cdccf6d3-logo-6"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "vertical-carousel",
+        "color_scheme": "background-2",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "Powerful partners",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Our Trusted Partners",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Together, we embark on ventures that make a difference, transforming challenges into opportunities and aspirations into tangible realities.",
+        "horizontal_alignment": "center",
+        "vertical_alignment": "middle",
+        "speed_slider_1": 4000,
+        "speed_slider_2": 6000,
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "9b376f88-6df0-4ceb-ac6f-790180cdfe62": {
+      "type": "popular-products",
+      "settings": {
+        "color_scheme": "background-4",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "Products",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Our Premium Products",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Elevate your lifestyle with choices that resonate with your unique tastes and needs.",
+        "product_list": [],
+        "products_to_show": 3,
+        "image_ratio": "5/4",
+        "image_fit": "cover",
+        "add_border_radius_when_contain": false,
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": false,
+        "columns_mobile": "1",
+        "enable_mobile_overflow_slider": false,
+        "button_show": true,
+        "button_label": "Shop All",
+        "button_style": "primary",
+        "button_link": "",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "9b794cb4-959e-4864-a905-02fe62099f8d": {
+      "type": "countdown",
+      "settings": {
+        "color_scheme": "",
+        "enable_shadow": false,
+        "enable_mock_timer": false,
+        "date_picker": "2025-08-10",
+        "time_picker": "00:00",
+        "mock_date_picker_day": 2,
+        "mock_date_picker_hours": 3,
+        "countdown_block_font": "recommended",
+        "completed_countdown": "show_text",
+        "countdown_heading": "Header after countdown",
+        "opacity_overlay": 0,
+        "subheading": "Big sale alert",
+        "subheading_style": "subtitle",
+        "subheading_icon": "lightning-bolt-2",
+        "heading": "Last Chance for Amazing Discounts",
+        "heading_size": "h3",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "text": "",
+        "show_link": true,
+        "button_label": "Shop All",
+        "button_style": "simple",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "949d30b1-b9c8-423e-8557-b319d33632b7": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16479994478723__949d30b1-b9c8-423e-8557-b319d33632b7-slide-1": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "background-2",
+            "icon": "water-2",
+            "overlay_opacity": 0.5,
+            "show_video": false,
+            "loop_video": true,
+            "heading": "Heat-Resistant Design",
+            "heading_size": "recommended",
+            "heading_level": "h2",
+            "description": "Enjoy the versatility of our heat-resistant bottles without compromising on style or quality.",
+            "tab_heading": "Heading",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": "",
+            "overlay_link": false
+          }
+        },
+        "template--16479994478723__949d30b1-b9c8-423e-8557-b319d33632b7-slide-2": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "background-2",
+            "icon": "recycle",
+            "overlay_opacity": 0.5,
+            "show_video": false,
+            "loop_video": true,
+            "heading": "Recycled Materials",
+            "heading_size": "recommended",
+            "heading_level": "h2",
+            "description": "We care about the environment, which is why many of our bottles are crafted from recycled materials.",
+            "tab_heading": "Heading",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Shop Now",
+            "button_link": "",
+            "overlay_link": false
+          }
+        },
+        "8b63fa73-f745-4014-86e4-c1dabe36b033": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "background-2",
+            "icon": "delivery-box",
+            "overlay_opacity": 0.5,
+            "show_video": false,
+            "loop_video": true,
+            "heading": "Quality Material Craftsmanship",
+            "heading_size": "recommended",
+            "heading_level": "h2",
+            "description": "Each bottle is carefully crafted to provide the perfect vessel for your favorite beverages.",
+            "tab_heading": "Heading",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Shop Now",
+            "button_link": "",
+            "overlay_link": false
+          }
+        },
+        "8f241248-760f-4aac-a71b-5aeabd3860ea": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "background-2",
+            "icon": "circle",
+            "overlay_opacity": 0.5,
+            "show_video": false,
+            "loop_video": true,
+            "heading": "Eco-Friendly Practices",
+            "heading_size": "recommended",
+            "heading_level": "h2",
+            "description": "We ensure that your bottle choices align with environmentally responsible values.",
+            "tab_heading": "Heading",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Shop Now",
+            "button_link": "",
+            "overlay_link": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16479994478723__949d30b1-b9c8-423e-8557-b319d33632b7-slide-1",
+        "template--16479994478723__949d30b1-b9c8-423e-8557-b319d33632b7-slide-2",
+        "8b63fa73-f745-4014-86e4-c1dabe36b033",
+        "8f241248-760f-4aac-a71b-5aeabd3860ea"
+      ],
+      "settings": {
+        "layout": "simple",
+        "header_overlay": false,
+        "full_width": false,
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "Features",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Tailored to Your Needs",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "text": "Discover new favorites, making every sip an adventure.",
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text_align": "left",
+        "height": "adapt",
+        "text_align_content": "bottom-left",
+        "enable_autoplay": true,
+        "enable_parallax": false,
+        "enable_pagination": true,
+        "pagination_type": "numbers",
+        "pagination_color_scheme": "background-1",
+        "pagination_width": "medium",
+        "enable_navigation": false,
+        "navigation_color_scheme": "",
+        "slide_duration": 5,
+        "icon_size": "recommended",
+        "icon_style": "contrast",
+        "icon_fill_type": "solid",
+        "show_tab_icon": true,
+        "padding_top": "no-indent",
+        "padding_bottom": "l",
+        "margin_top": "l",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "65de9c8e-63a0-4a50-9945-44d06cc1e6d6": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16479994478723__65de9c8e-63a0-4a50-9945-44d06cc1e6d6-column-1": {
+          "type": "column",
+          "settings": {
+            "icon": "like",
+            "icon_fill_type": "gradient",
+            "heading": "Passion for Excellence",
+            "text": "We strive to provide the best bottle shopping experience."
+          }
+        },
+        "template--16479994478723__65de9c8e-63a0-4a50-9945-44d06cc1e6d6-column-2": {
+          "type": "column",
+          "settings": {
+            "icon": "water-3",
+            "icon_fill_type": "gradient",
+            "heading": "Years of Expertise",
+            "text": "A team of experts brings extensive knowledge to help making choices."
+          }
+        },
+        "template--16479994478723__65de9c8e-63a0-4a50-9945-44d06cc1e6d6-column-3": {
+          "type": "column",
+          "settings": {
+            "icon": "shopping-basket",
+            "icon_fill_type": "gradient",
+            "heading": "Sustainable Solutions",
+            "text": "We're dedicated to reducing our environmental footprint."
+          }
+        },
+        "template--16479994478723__65de9c8e-63a0-4a50-9945-44d06cc1e6d6-column-4": {
+          "type": "column",
+          "settings": {
+            "icon": "medicine",
+            "icon_fill_type": "gradient",
+            "heading": "Collective Goal",
+            "text": "Your satisfaction and enjoyment are at the core of our team's mission."
+          }
+        }
+      },
+      "block_order": [
+        "template--16479994478723__65de9c8e-63a0-4a50-9945-44d06cc1e6d6-column-1",
+        "template--16479994478723__65de9c8e-63a0-4a50-9945-44d06cc1e6d6-column-2",
+        "template--16479994478723__65de9c8e-63a0-4a50-9945-44d06cc1e6d6-column-3",
+        "template--16479994478723__65de9c8e-63a0-4a50-9945-44d06cc1e6d6-column-4"
+      ],
+      "settings": {
+        "layout": "image_last",
+        "color_scheme": "background-2",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "About us",
+        "inner_heading": "<span style=\"text-decoration:underline\">Our Journey:</span> Billions of Single Use Plastic Bottles Saved",
+        "inner_heading_size": "h2",
+        "inner_heading_level": "h2",
+        "inner_heading_line": "rounded",
+        "inner_line_color": "#08b275",
+        "inner_word_break": false,
+        "description": "<p>Since our inception, our mission has been clear: to deliver unparalleled value, both in products and services.</p>",
+        "text_align_inner": "top",
+        "enable_link": false,
+        "link": "",
+        "height": "square",
+        "overlay_opacity": 0.2,
+        "logo_width": 90,
+        "add_text": "Since 2018",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "show_button": true,
+        "button_label": "Read Our Story",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "3859f7da-2c47-41d0-aef6-90d67e18eea1": {
+      "type": "featured-product",
+      "blocks": {
+        "template--15231063785533__3859f7da-2c47-41d0-aef6-90d67e18eea1-title-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3"
+          }
+        },
+        "template--15231063785533__3859f7da-2c47-41d0-aef6-90d67e18eea1-price-1": {
+          "type": "price",
+          "settings": {}
+        },
+        "template--15231063785533__3859f7da-2c47-41d0-aef6-90d67e18eea1-description-1": {
+          "type": "description",
+          "settings": {
+            "description": ""
+          }
+        },
+        "template--15231063785533__3859f7da-2c47-41d0-aef6-90d67e18eea1-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "unavailable_options_clickable": false
+          }
+        },
+        "template--15231063785533__3859f7da-2c47-41d0-aef6-90d67e18eea1-inventory-1": {
+          "type": "inventory",
+          "settings": {}
+        },
+        "template--15231063785533__3859f7da-2c47-41d0-aef6-90d67e18eea1-tags-1": {
+          "type": "tags",
+          "settings": {}
+        },
+        "template--15231063785533__3859f7da-2c47-41d0-aef6-90d67e18eea1-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity": true
+          }
+        }
+      },
+      "block_order": [
+        "template--15231063785533__3859f7da-2c47-41d0-aef6-90d67e18eea1-title-1",
+        "template--15231063785533__3859f7da-2c47-41d0-aef6-90d67e18eea1-price-1",
+        "template--15231063785533__3859f7da-2c47-41d0-aef6-90d67e18eea1-description-1",
+        "template--15231063785533__3859f7da-2c47-41d0-aef6-90d67e18eea1-variant_picker-1",
+        "template--15231063785533__3859f7da-2c47-41d0-aef6-90d67e18eea1-inventory-1",
+        "template--15231063785533__3859f7da-2c47-41d0-aef6-90d67e18eea1-tags-1",
+        "template--15231063785533__3859f7da-2c47-41d0-aef6-90d67e18eea1-buy_buttons-1"
+      ],
+      "settings": {
+        "subheading": "Featured product",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Meet Our Featured Find",
+        "heading_size": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Explore its exceptional attributes, and discover why it's making waves in the market.",
+        "text_align": "left",
+        "product_item": "eco-classic-bottle",
+        "color_scheme": "background-4",
+        "desktop_alignment": "right",
+        "mobile_alignment": "before",
+        "aspect_ratio": "5/4",
+        "image_fit": "cover",
+        "padding_top": "l",
+        "padding_bottom": "l"
+      }
+    },
+    "05d5190a-23b2-40f6-a028-d5a6cbf04c7b": {
+      "type": "numbers",
+      "blocks": {
+        "template--16479994478723__05d5190a-23b2-40f6-a028-d5a6cbf04c7b-column-1": {
+          "type": "column",
+          "settings": {
+            "number": "24 800",
+            "heading": "A Thirst for Variety",
+            "description": "With over 24 800 unique bottles sourced from 40 different countries, our store boasts one of the most diverse bottles collections in the region.",
+            "icon": "water-3",
+            "icon_color": "subtle",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        },
+        "template--16479994478723__05d5190a-23b2-40f6-a028-d5a6cbf04c7b-column-2": {
+          "type": "column",
+          "settings": {
+            "number": "80%",
+            "heading": "Sustainability",
+            "description": "In the past year, we've successfully transitioned to 80% eco-friendly packaging, reducing our carbon footprint by an estimated 25%.",
+            "icon": "chart",
+            "icon_color": "subtle",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        },
+        "template--16479994478723__05d5190a-23b2-40f6-a028-d5a6cbf04c7b-column-3": {
+          "type": "column",
+          "settings": {
+            "number": "10 000+",
+            "heading": "Customer Loyalty",
+            "description": "Over 60% of our first-time customers return within three months, and our loyalty program membership has surged by 150% in the last two years.",
+            "icon": "clock-2",
+            "icon_color": "subtle",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16479994478723__05d5190a-23b2-40f6-a028-d5a6cbf04c7b-column-1",
+        "template--16479994478723__05d5190a-23b2-40f6-a028-d5a6cbf04c7b-column-2",
+        "template--16479994478723__05d5190a-23b2-40f6-a028-d5a6cbf04c7b-column-3"
+      ],
+      "settings": {
+        "layout": "columns",
+        "block_type": "subtle",
+        "columns_to_row": 3,
+        "color_scheme": "",
+        "enable_border": true,
+        "border_full": true,
+        "subheading": "Numbers",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Statistics and Achievements",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "text": "Explore the numbers, milestones that showcase our commitment to excellence.",
+        "text_align": "left",
+        "number_size": "recommended",
+        "icon_size": "recommended",
+        "card_heading_size": "recommended",
+        "number_size_first": "large",
+        "icon_size_first": "extra-large",
+        "card_heading_size_first": "h4",
+        "padding_top": "m",
+        "padding_bottom": "l"
+      }
+    },
+    "image-banner": {
+      "type": "image-banner",
+      "settings": {
+        "full_width": false,
+        "color_scheme": "background-3",
+        "enable_link": false,
+        "link": "",
+        "image_ratio": "adapt",
+        "image_ratio_mobile": "adapt",
+        "opacity_overlay": 0.2,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "Eco-Friendly, Designer, and Durable Choices for Hydration",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "bottom-left",
+        "text_width": "medium",
+        "show_view_all": true,
+        "button_label": "Shop All",
+        "button_style": "simple_link",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "l"
+      }
+    },
+    "5196e9bb-6008-4806-a1cc-40a506186702": {
+      "type": "testimonials",
+      "blocks": {
+        "template--16479994478723__5196e9bb-6008-4806-a1cc-40a506186702-testimonials_slide-1": {
+          "type": "testimonials_slide",
+          "settings": {
+            "rating": 5,
+            "slide_text": "“I've tried countless bottles in my career and can say their bottles are not only lightweight and easy to carry but also built to withstand the toughest training sessions.”",
+            "slide_name": "David Reynolds",
+            "slide_position": "Professional Athlete"
+          }
+        },
+        "template--16479994478723__5196e9bb-6008-4806-a1cc-40a506186702-testimonials_slide-2": {
+          "type": "testimonials_slide",
+          "settings": {
+            "rating": 5,
+            "slide_text": "“As a fitness trainer, I know the importance of staying hydrated during workouts. Durable, leak-proof, and stylish – they've got it all!”",
+            "slide_name": "Sarah Mitchell",
+            "slide_position": "Fitness Trainer"
+          }
+        },
+        "template--16479994478723__5196e9bb-6008-4806-a1cc-40a506186702-testimonials_slide-3": {
+          "type": "testimonials_slide",
+          "settings": {
+            "rating": 5,
+            "slide_text": "“The eco-friendly options align with my values, and the ergonomic design makes them perfect for on-the-go yogis.”",
+            "slide_name": "Emily Davis",
+            "slide_position": "Yoga Instructor"
+          }
+        },
+        "3da79265-fec9-4e51-aa03-48708b860d82": {
+          "type": "testimonials_slide",
+          "settings": {
+            "rating": 5,
+            "slide_text": "“I take sports bottles on all my outdoor adventures. They keep my water cold for hours, and the rugged construction can handle rough terrains.”",
+            "slide_name": "Michael Chang",
+            "slide_position": "Hiker"
+          }
+        },
+        "e18a239e-0093-4983-a2ae-4c982796709c": {
+          "type": "testimonials_slide",
+          "settings": {
+            "rating": 5,
+            "slide_text": "“Being a busy mom, I need reliable sport bottles for my kids' sports activities. Store offers a variety of sizes and colors, and the spill-proof design gives me peace of mind.”",
+            "slide_name": "Laura Turner",
+            "slide_position": "Engineer"
+          }
+        },
+        "b7267e10-8006-4df1-bb16-d0f0a74b35de": {
+          "type": "testimonials_slide",
+          "settings": {
+            "rating": 5,
+            "slide_text": "“Training for marathons demands top-quality hydration solutions. These sport bottles have been my trusted companions through countless miles.”",
+            "slide_name": "Mark Roberts",
+            "slide_position": "Marathon Runner"
+          }
+        }
+      },
+      "block_order": [
+        "template--16479994478723__5196e9bb-6008-4806-a1cc-40a506186702-testimonials_slide-1",
+        "template--16479994478723__5196e9bb-6008-4806-a1cc-40a506186702-testimonials_slide-2",
+        "template--16479994478723__5196e9bb-6008-4806-a1cc-40a506186702-testimonials_slide-3",
+        "3da79265-fec9-4e51-aa03-48708b860d82",
+        "e18a239e-0093-4983-a2ae-4c982796709c",
+        "b7267e10-8006-4df1-bb16-d0f0a74b35de"
+      ],
+      "settings": {
+        "layout": "image_top_slider",
+        "color_scheme": "background-4",
+        "subheading": "Testimonials",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Discover What Our Users Say",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Discover the genuine experiences and feedback directly from our users.",
+        "text_align": "left",
+        "slide_color_scheme": "",
+        "slide_text_size": "recommended",
+        "enable_navigation": true,
+        "enable_navigation_mobile": false,
+        "navigation_color_scheme": "",
+        "enable_pagination": false,
+        "enable_pagination_mobile": true,
+        "pagination_color_scheme": "",
+        "padding_top": "no-indent",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "featured_blog": {
+      "type": "featured-blog",
+      "settings": {
+        "blog": "",
+        "color_scheme": "background-4",
+        "post_layout": "overlay",
+        "enable_carousel": false,
+        "navigation_color_scheme": "",
+        "background_card": false,
+        "columns": 2,
+        "post_limit": 4,
+        "card_color_scheme": "background-4",
+        "subheading": "Newsroom",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Featured Blogs",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Join us in unraveling the tales of tastes.",
+        "image_ratio": "landscape",
+        "post_heading_size": "recommended",
+        "show_image": true,
+        "show_tags": true,
+        "show_date": true,
+        "show_author": true,
+        "show_excerpt": false,
+        "show_view_all": true,
+        "button_label": "Explore Newsroom",
+        "button_style": "primary",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "collapsible-content": {
+      "type": "collapsible-content",
+      "blocks": {
+        "block_1": {
+          "type": "accordion",
+          "settings": {
+            "question": "What is the best sport bottle material for workouts?",
+            "answer": "<p>We recommend BPA-free, food-grade stainless steel or high-quality plastic sport bottles for optimal hydration during workouts. These materials are durable, easy to clean, and offer excellent insulation properties.</p>",
+            "opened": true
+          }
+        },
+        "block_2": {
+          "type": "accordion",
+          "settings": {
+            "question": "Are your  bottles dishwasher-safe?",
+            "answer": "<p>Yes, many of our sport bottles are dishwasher-safe. However, we recommend checking the product specifications or care instructions for each bottle, as some may have specific cleaning recommendations.</p>",
+            "opened": false
+          }
+        },
+        "block_3": {
+          "type": "accordion",
+          "settings": {
+            "question": "Do your sport bottles come with a warranty?",
+            "answer": "<p>Most of our sport bottles come with a warranty. Warranty periods may vary depending on the specific product. Please refer to the product details or contact our customer support for warranty information.</p>",
+            "opened": false
+          }
+        },
+        "20d89e0c-5806-43b3-9510-3d6676afbedc": {
+          "type": "accordion",
+          "settings": {
+            "question": "What size bottle is best for different sports and activities?",
+            "answer": "<p>The ideal size of a sports bottle can vary depending on your activity. Generally, smaller bottles (16-24 oz) are great for short workouts, while larger bottles (32-40 oz) are better for longer activities or outdoor adventures. Our team can provide personalized recommendations based on your needs.</p>",
+            "opened": false
+          }
+        }
+      },
+      "block_order": [
+        "block_1",
+        "block_2",
+        "block_3",
+        "20d89e0c-5806-43b3-9510-3d6676afbedc"
+      ],
+      "settings": {
+        "layout": "border",
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "Frequently Asked Questions",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Questions & Answers",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Clarify any uncertainties you might have, ensuring a smooth and hassle-free experience for everyone.",
+        "text_align": "center",
+        "row_color_scheme": "",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "dbcf4ca6-29ae-4aed-8b82-8aa2e635dbd1": {
+      "type": "image-banner",
+      "settings": {
+        "full_width": false,
+        "color_scheme": "background-2",
+        "enable_link": false,
+        "link": "",
+        "image_ratio": "adapt",
+        "image_ratio_mobile": "adapt",
+        "opacity_overlay": 0,
+        "icon": "hand-1",
+        "icon_color_scheme": "background-1",
+        "icon_size": "large",
+        "icon_style": "contrast",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "Connect. Communicate. Collaborate",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "bottom-left",
+        "text_width": "small",
+        "show_view_all": true,
+        "button_label": "Contact Us",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "l"
+      }
+    },
+    "4278ab67-4797-4eb2-af1a-1b66b66e6cc3": {
+      "type": "animated-image-collage",
+      "blocks": {
+        "template--16479994478723__4278ab67-4797-4eb2-af1a-1b66b66e6cc3-column-1": {
+          "type": "column",
+          "settings": {
+            "image_width": 370
+          }
+        },
+        "template--16479994478723__4278ab67-4797-4eb2-af1a-1b66b66e6cc3-column-2": {
+          "type": "column",
+          "settings": {
+            "image_width": 460
+          }
+        },
+        "template--16479994478723__4278ab67-4797-4eb2-af1a-1b66b66e6cc3-column-3": {
+          "type": "column",
+          "settings": {
+            "image_width": 370
+          }
+        },
+        "template--16479994478723__4278ab67-4797-4eb2-af1a-1b66b66e6cc3-column-4": {
+          "type": "column",
+          "settings": {
+            "image_width": 460
+          }
+        },
+        "template--16479994478723__4278ab67-4797-4eb2-af1a-1b66b66e6cc3-column-5": {
+          "type": "column",
+          "settings": {
+            "image_width": 370
+          }
+        },
+        "template--16479994478723__4278ab67-4797-4eb2-af1a-1b66b66e6cc3-column-11": {
+          "type": "column",
+          "settings": {
+            "image_width": 460
+          }
+        }
+      },
+      "block_order": [
+        "template--16479994478723__4278ab67-4797-4eb2-af1a-1b66b66e6cc3-column-1",
+        "template--16479994478723__4278ab67-4797-4eb2-af1a-1b66b66e6cc3-column-2",
+        "template--16479994478723__4278ab67-4797-4eb2-af1a-1b66b66e6cc3-column-3",
+        "template--16479994478723__4278ab67-4797-4eb2-af1a-1b66b66e6cc3-column-4",
+        "template--16479994478723__4278ab67-4797-4eb2-af1a-1b66b66e6cc3-column-5",
+        "template--16479994478723__4278ab67-4797-4eb2-af1a-1b66b66e6cc3-column-11"
+      ],
+      "settings": {
+        "section_type": "bottom",
+        "color_scheme": "",
+        "header_overlay": false,
+        "header_transparent": false,
+        "column_to_show": 3,
+        "opacity_overlay": 0.3,
+        "full_width": true,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_style": "contrast",
+        "icon_fill_type": "gradient",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "subheading": "5.00 from 144+ reviews",
+        "subheading_style": "subtitle subtitle--secondary",
+        "subheading_icon": "star",
+        "heading": "<span style=\"text-decoration:underline\">Hydration & Wellness</span> Meet Style and Functionality — No Compromises",
+        "heading_size": "h1",
+        "heading_level": "h2",
+        "heading_line": "rounded",
+        "line_color": "#08b275",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Whether it's making a purchase, seeking assistance, or exploring our range, one touch is all it takes.",
+        "enable_subscribe": false,
+        "button_label_subscribe": "Label",
+        "color_scheme_subscribe": "",
+        "enable_box_shadow": true,
+        "button_style_subscribe": "primary",
+        "show_button": true,
+        "button_label": "Shop Now",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": true,
+        "button_label_2": "See More",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "949d30b1-b9c8-423e-8557-b319d33632b7",
+    "aa66337f-82f0-4c84-aea6-b5ef91ad5d40",
+    "aa5a0c19-0cfc-41ab-872f-97abcbcb7c93",
+    "dbbd77aa-b38d-4df0-a757-03142a78e36b",
+    "2bb1e645-010e-42e3-ad1e-5e5a07cdae3f",
+    "5c94bd84-824f-4368-a89e-e1a1cdccf6d3",
+    "9b376f88-6df0-4ceb-ac6f-790180cdfe62",
+    "9b794cb4-959e-4864-a905-02fe62099f8d",
+    "65de9c8e-63a0-4a50-9945-44d06cc1e6d6",
+    "3859f7da-2c47-41d0-aef6-90d67e18eea1",
+    "05d5190a-23b2-40f6-a028-d5a6cbf04c7b",
+    "image-banner",
+    "5196e9bb-6008-4806-a1cc-40a506186702",
+    "featured_blog",
+    "collapsible-content",
+    "dbcf4ca6-29ae-4aed-8b82-8aa2e635dbd1",
+    "4278ab67-4797-4eb2-af1a-1b66b66e6cc3"
+  ]
+}

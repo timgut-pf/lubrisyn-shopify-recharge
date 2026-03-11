@@ -1,0 +1,64 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+	"type": "footer",
+	"name": "t:sections.footer.settings.footer-group.label",
+	"sections": {
+		"footer": {
+			"type": "footer",
+			"blocks": {
+				"footer-0": {
+					"type": "logo_info",
+					"settings": {
+						"logo_width": 95,
+						"description": "Use this space for a short company tagline or mission statement that highlights your brand’s vision, core values, and dedication to quality and customer satisfaction."
+					}
+				},
+				"footer-1": {
+					"type": "link_list",
+					"settings": {
+						"menu": "footer",
+						"default_open": false
+					}
+				},
+				"footer-2": {
+					"type": "link_list",
+					"settings": {
+						"menu": "footer",
+						"default_open": false
+					}
+				},
+				"footer-3": {
+					"type": "subscribe",
+					"settings": {
+						"color_scheme_subscribe": "",
+						"enable_box_shadow": true,
+						"additional_text": "",
+						"button_style": "primary"
+					}
+				}
+			},
+			"block_order": ["footer-0", "footer-1", "footer-2", "footer-3"],
+			"settings": {
+				"color_scheme": "background-2",
+				"enable_country_selector": true,
+				"enable_language_selector": true,
+				"payment_enable": true,
+				"show_social": true,
+				"enable_copyright_date": true,
+				"enable_copyright_shopname": true,
+				"menu_bottom": "footer",
+				"show_policy": true,
+				"enable_follow_on_shop": true
+			}
+		}
+	},
+	"order": ["footer"]
+}
