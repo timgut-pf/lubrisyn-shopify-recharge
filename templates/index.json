@@ -9,6 +9,138 @@
  */
 {
   "sections": {
+    "949d30b1-b9c8-423e-8557-b319d33632b7": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16479994478723__949d30b1-b9c8-423e-8557-b319d33632b7-slide-1": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "background-2",
+            "icon": "water-2",
+            "overlay_opacity": 0.5,
+            "show_video": false,
+            "loop_video": true,
+            "heading": "Heat-Resistant Design",
+            "heading_size": "recommended",
+            "heading_level": "h2",
+            "description": "Enjoy the versatility of our heat-resistant bottles without compromising on style or quality.",
+            "tab_heading": "Heading",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": "",
+            "overlay_link": false
+          }
+        },
+        "template--16479994478723__949d30b1-b9c8-423e-8557-b319d33632b7-slide-2": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "background-2",
+            "icon": "recycle",
+            "overlay_opacity": 0.5,
+            "show_video": false,
+            "loop_video": true,
+            "heading": "Recycled Materials",
+            "heading_size": "recommended",
+            "heading_level": "h2",
+            "description": "We care about the environment, which is why many of our bottles are crafted from recycled materials.",
+            "tab_heading": "Heading",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Shop Now",
+            "button_link": "",
+            "overlay_link": false
+          }
+        },
+        "8b63fa73-f745-4014-86e4-c1dabe36b033": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "background-2",
+            "icon": "delivery-box",
+            "overlay_opacity": 0.5,
+            "show_video": false,
+            "loop_video": true,
+            "heading": "Quality Material Craftsmanship",
+            "heading_size": "recommended",
+            "heading_level": "h2",
+            "description": "Each bottle is carefully crafted to provide the perfect vessel for your favorite beverages.",
+            "tab_heading": "Heading",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Shop Now",
+            "button_link": "",
+            "overlay_link": false
+          }
+        },
+        "8f241248-760f-4aac-a71b-5aeabd3860ea": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "background-2",
+            "icon": "circle",
+            "overlay_opacity": 0.5,
+            "show_video": false,
+            "loop_video": true,
+            "heading": "Eco-Friendly Practices",
+            "heading_size": "recommended",
+            "heading_level": "h2",
+            "description": "We ensure that your bottle choices align with environmentally responsible values.",
+            "tab_heading": "Heading",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Shop Now",
+            "button_link": "",
+            "overlay_link": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16479994478723__949d30b1-b9c8-423e-8557-b319d33632b7-slide-1",
+        "template--16479994478723__949d30b1-b9c8-423e-8557-b319d33632b7-slide-2",
+        "8b63fa73-f745-4014-86e4-c1dabe36b033",
+        "8f241248-760f-4aac-a71b-5aeabd3860ea"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "simple",
+        "header_overlay": false,
+        "full_width": false,
+        "color_scheme": "background-4",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "Features",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Tailored to Your Needs",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "text": "Discover new favorites, making every sip an adventure.",
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text_align": "left",
+        "height": "adapt",
+        "text_align_content": "bottom-left",
+        "enable_autoplay": true,
+        "enable_parallax": false,
+        "enable_pagination": true,
+        "pagination_type": "numbers",
+        "pagination_color_scheme": "background-1",
+        "pagination_width": "medium",
+        "enable_navigation": false,
+        "navigation_color_scheme": "",
+        "slide_duration": 5,
+        "icon_size": "recommended",
+        "icon_style": "contrast",
+        "icon_fill_type": "solid",
+        "show_tab_icon": true,
+        "padding_top": "no-indent",
+        "padding_bottom": "l",
+        "margin_top": "l",
+        "margin_bottom": "no-indent"
+      }
+    },
     "aa66337f-82f0-4c84-aea6-b5ef91ad5d40": {
       "type": "animated-image-collage",
       "blocks": {
@@ -469,10 +601,10 @@
         "color_scheme": "background-4",
         "enable_border": false,
         "border_full": false,
-        "subheading": "Products",
+        "subheading": "",
         "subheading_style": "subtitle",
         "subheading_icon": "none",
-        "heading": "Our Premium Products",
+        "heading": "ALL PRODUCTS",
         "heading_size": "h2",
         "heading_level": "h2",
         "heading_line": "simple",
@@ -530,137 +662,6 @@
         "button_style": "simple",
         "button_link": "",
         "margin_top": "no-indent",
-        "margin_bottom": "no-indent"
-      }
-    },
-    "949d30b1-b9c8-423e-8557-b319d33632b7": {
-      "type": "slideshow",
-      "blocks": {
-        "template--16479994478723__949d30b1-b9c8-423e-8557-b319d33632b7-slide-1": {
-          "type": "slide",
-          "settings": {
-            "color_scheme": "background-2",
-            "icon": "water-2",
-            "overlay_opacity": 0.5,
-            "show_video": false,
-            "loop_video": true,
-            "heading": "Heat-Resistant Design",
-            "heading_size": "recommended",
-            "heading_level": "h2",
-            "description": "Enjoy the versatility of our heat-resistant bottles without compromising on style or quality.",
-            "tab_heading": "Heading",
-            "show_button": true,
-            "button_style": "simple",
-            "button_label": "Know More",
-            "button_link": "",
-            "overlay_link": false
-          }
-        },
-        "template--16479994478723__949d30b1-b9c8-423e-8557-b319d33632b7-slide-2": {
-          "type": "slide",
-          "settings": {
-            "color_scheme": "background-2",
-            "icon": "recycle",
-            "overlay_opacity": 0.5,
-            "show_video": false,
-            "loop_video": true,
-            "heading": "Recycled Materials",
-            "heading_size": "recommended",
-            "heading_level": "h2",
-            "description": "We care about the environment, which is why many of our bottles are crafted from recycled materials.",
-            "tab_heading": "Heading",
-            "show_button": true,
-            "button_style": "simple",
-            "button_label": "Shop Now",
-            "button_link": "",
-            "overlay_link": false
-          }
-        },
-        "8b63fa73-f745-4014-86e4-c1dabe36b033": {
-          "type": "slide",
-          "settings": {
-            "color_scheme": "background-2",
-            "icon": "delivery-box",
-            "overlay_opacity": 0.5,
-            "show_video": false,
-            "loop_video": true,
-            "heading": "Quality Material Craftsmanship",
-            "heading_size": "recommended",
-            "heading_level": "h2",
-            "description": "Each bottle is carefully crafted to provide the perfect vessel for your favorite beverages.",
-            "tab_heading": "Heading",
-            "show_button": true,
-            "button_style": "simple",
-            "button_label": "Shop Now",
-            "button_link": "",
-            "overlay_link": false
-          }
-        },
-        "8f241248-760f-4aac-a71b-5aeabd3860ea": {
-          "type": "slide",
-          "settings": {
-            "color_scheme": "background-2",
-            "icon": "circle",
-            "overlay_opacity": 0.5,
-            "show_video": false,
-            "loop_video": true,
-            "heading": "Eco-Friendly Practices",
-            "heading_size": "recommended",
-            "heading_level": "h2",
-            "description": "We ensure that your bottle choices align with environmentally responsible values.",
-            "tab_heading": "Heading",
-            "show_button": true,
-            "button_style": "simple",
-            "button_label": "Shop Now",
-            "button_link": "",
-            "overlay_link": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16479994478723__949d30b1-b9c8-423e-8557-b319d33632b7-slide-1",
-        "template--16479994478723__949d30b1-b9c8-423e-8557-b319d33632b7-slide-2",
-        "8b63fa73-f745-4014-86e4-c1dabe36b033",
-        "8f241248-760f-4aac-a71b-5aeabd3860ea"
-      ],
-      "settings": {
-        "layout": "simple",
-        "header_overlay": false,
-        "full_width": false,
-        "color_scheme": "",
-        "enable_border": false,
-        "border_full": false,
-        "subheading": "Features",
-        "subheading_style": "subtitle",
-        "subheading_icon": "none",
-        "heading": "Tailored to Your Needs",
-        "heading_size": "h2",
-        "heading_level": "h2",
-        "heading_line": "simple",
-        "line_color": "#1566e0",
-        "word_break": false,
-        "text": "Discover new favorites, making every sip an adventure.",
-        "heading_animation": "none",
-        "word_break_an": false,
-        "text_align": "left",
-        "height": "adapt",
-        "text_align_content": "bottom-left",
-        "enable_autoplay": true,
-        "enable_parallax": false,
-        "enable_pagination": true,
-        "pagination_type": "numbers",
-        "pagination_color_scheme": "background-1",
-        "pagination_width": "medium",
-        "enable_navigation": false,
-        "navigation_color_scheme": "",
-        "slide_duration": 5,
-        "icon_size": "recommended",
-        "icon_style": "contrast",
-        "icon_fill_type": "solid",
-        "show_tab_icon": true,
-        "padding_top": "no-indent",
-        "padding_bottom": "l",
-        "margin_top": "l",
         "margin_bottom": "no-indent"
       }
     },

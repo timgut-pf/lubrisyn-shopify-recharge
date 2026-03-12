@@ -8,57 +8,70 @@
  * ------------------------------------------------------------
  */
 {
-	"type": "footer",
-	"name": "t:sections.footer.settings.footer-group.label",
-	"sections": {
-		"footer": {
-			"type": "footer",
-			"blocks": {
-				"footer-0": {
-					"type": "logo_info",
-					"settings": {
-						"logo_width": 95,
-						"description": "Use this space for a short company tagline or mission statement that highlights your brand’s vision, core values, and dedication to quality and customer satisfaction."
-					}
-				},
-				"footer-1": {
-					"type": "link_list",
-					"settings": {
-						"menu": "footer",
-						"default_open": false
-					}
-				},
-				"footer-2": {
-					"type": "link_list",
-					"settings": {
-						"menu": "footer",
-						"default_open": false
-					}
-				},
-				"footer-3": {
-					"type": "subscribe",
-					"settings": {
-						"color_scheme_subscribe": "",
-						"enable_box_shadow": true,
-						"additional_text": "",
-						"button_style": "primary"
-					}
-				}
-			},
-			"block_order": ["footer-0", "footer-1", "footer-2", "footer-3"],
-			"settings": {
-				"color_scheme": "background-2",
-				"enable_country_selector": true,
-				"enable_language_selector": true,
-				"payment_enable": true,
-				"show_social": true,
-				"enable_copyright_date": true,
-				"enable_copyright_shopname": true,
-				"menu_bottom": "footer",
-				"show_policy": true,
-				"enable_follow_on_shop": true
-			}
-		}
-	},
-	"order": ["footer"]
+  "type": "footer",
+  "name": "t:sections.footer.settings.footer-group.label",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-0": {
+          "type": "logo_info",
+          "settings": {
+            "logo": "shopify://shop_images/Lubrisyn-logo.png",
+            "logo_width": 240,
+            "description": ""
+          }
+        },
+        "footer-1": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Company",
+            "menu": "footer",
+            "default_open": false
+          }
+        },
+        "footer-2": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Products",
+            "menu": "footer",
+            "default_open": false
+          }
+        },
+        "footer-3": {
+          "type": "subscribe",
+          "settings": {
+            "color_scheme_subscribe": "",
+            "enable_box_shadow": true,
+            "heading": "Subscribe for Updates",
+            "text": "Join our community and be the first to receive the latest news, special offers, and exclusive content directly in your inbox!",
+            "additional_text": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "footer-0",
+        "footer-1",
+        "footer-2",
+        "footer-3"
+      ],
+      "settings": {
+        "color_scheme": "background-4",
+        "content_alignment": "left",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": false,
+        "show_social": false,
+        "enable_copyright_date": true,
+        "enable_copyright_shopname": true,
+        "menu_bottom": "",
+        "show_policy": false,
+        "enable_follow_on_shop": false
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
 }
