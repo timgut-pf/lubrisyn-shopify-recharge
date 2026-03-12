@@ -1,0 +1,351 @@
+{{ 'section-homepage-hero.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  {% render 'section-padding' %}
+{%- endstyle -%}
+
+{%- liquid
+  assign zip_query_param = section.settings.zip_query_param | strip | default: 'zip'
+  assign zip_placeholder = section.settings.zip_placeholder | strip | default: 'Enter ZIP code'
+  assign section_heading_tag = section.settings.heading_level | default: 'h1'
+-%}
+
+<div
+  id="HomepageHero-{{ section.id }}"
+  class="homepage-hero color-{{ section.settings.color_scheme }} background section-{{ section.id }}-padding"
+  style="
+    --homepage-hero-border-color: {{ section.settings.border_color }};
+    --homepage-hero-border-width: {{ section.settings.border_width }}px;
+    --homepage-hero-radius: {{ section.settings.corner_radius }}px;
+  "
+>
+  <div class="container">
+    <div class="homepage-hero__grid{% if section.settings.desktop_image_position == 'before' %} homepage-hero__grid--reverse{% endif %}">
+      <div class="homepage-hero__content">
+        {%- if section.settings.eyebrow != blank -%}
+          <div class="homepage-hero__eyebrow subtitle subtitle--secondary">
+            {{ section.settings.eyebrow }}
+          </div>
+        {%- endif -%}
+
+        {%- if section.settings.heading != blank -%}
+          <{{ section_heading_tag }} class="homepage-hero__heading title h1">
+            {{ section.settings.heading }}
+          </{{ section_heading_tag }}>
+        {%- endif -%}
+
+        {%- if section.settings.body != blank -%}
+          <div class="homepage-hero__body body-large rte">
+            {{ section.settings.body }}
+          </div>
+        {%- endif -%}
+
+        <div class="homepage-hero__where-to-buy">
+          {%- if section.settings.where_to_buy_heading != blank -%}
+            <h2 class="homepage-hero__where-to-buy-heading h4">
+              {{ section.settings.where_to_buy_heading }}
+            </h2>
+          {%- endif -%}
+
+          {%- if section.settings.where_to_buy_text != blank -%}
+            <div class="homepage-hero__where-to-buy-text rte">
+              {{ section.settings.where_to_buy_text }}
+            </div>
+          {%- endif -%}
+
+          <form
+            method="get"
+            class="homepage-hero__form"
+            {% if section.settings.form_action_url != blank %}
+              action="{{ section.settings.form_action_url | escape }}"
+            {% endif %}
+          >
+            <div class="homepage-hero__form-field field">
+              <label class="visually-hidden" for="HomepageHeroZip-{{ section.id }}">
+                {{ zip_placeholder }}
+              </label>
+              <input
+                id="HomepageHeroZip-{{ section.id }}"
+                class="homepage-hero__input field__input"
+                type="text"
+                name="{{ zip_query_param | escape }}"
+                placeholder="{{ zip_placeholder | escape }}"
+                autocomplete="postal-code"
+                required
+              >
+              <button
+                class="homepage-hero__submit button button--{{ section.settings.button_style }} focus-inset"
+                type="submit"
+              >
+                {{ section.settings.button_label }}
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="homepage-hero__media">
+        <div class="homepage-hero__media-frame">
+          <div class="homepage-hero__media-inner">
+            {%- if section.settings.image != blank -%}
+              {{
+                section.settings.image
+                | image_url: width: 2400
+                | image_tag:
+                  loading: 'lazy',
+                  widths: '550, 720, 900, 1100, 1400, 1800, 2400',
+                  sizes: '(min-width: 990px) 45vw, 100vw',
+                  class: 'homepage-hero__image'
+              }}
+            {%- else -%}
+              {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg homepage-hero__image' }}
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Homepage hero",
+  "tag": "section",
+  "class": "section-homepage-hero spaced-section",
+  "enabled_on": {
+    "templates": ["index"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "default": "background-1",
+      "label": "Color scheme"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "default": "Lubrisyn joint support",
+      "label": "Eyebrow"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Support your horse with <span style=\"text-decoration:underline\">daily comfort</span> and mobility.",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_level",
+      "label": "Heading level",
+      "default": "h1",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Body",
+      "default": "<p>Lead with a clear value proposition, show the product imagery, and help shoppers quickly find where to buy near them.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Where to buy"
+    },
+    {
+      "type": "text",
+      "id": "where_to_buy_heading",
+      "default": "Where to buy",
+      "label": "Card heading"
+    },
+    {
+      "type": "richtext",
+      "id": "where_to_buy_text",
+      "label": "Card text",
+      "default": "<p>Enter your ZIP code to find a nearby retailer.</p>"
+    },
+    {
+      "type": "text",
+      "id": "form_action_url",
+      "label": "Form action URL",
+      "info": "The ZIP form will submit a GET request to this URL."
+    },
+    {
+      "type": "text",
+      "id": "zip_query_param",
+      "default": "zip",
+      "label": "ZIP query parameter"
+    },
+    {
+      "type": "text",
+      "id": "zip_placeholder",
+      "default": "Enter ZIP code",
+      "label": "ZIP input placeholder"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "Find a retailer",
+      "label": "Button label"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Button style",
+      "default": "primary",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "secondary",
+          "label": "Secondary"
+        },
+        {
+          "value": "tertiary",
+          "label": "Tertiary"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Hero image"
+    },
+    {
+      "type": "select",
+      "id": "desktop_image_position",
+      "label": "Desktop image position",
+      "default": "after",
+      "options": [
+        {
+          "value": "after",
+          "label": "Right"
+        },
+        {
+          "value": "before",
+          "label": "Left"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Frame style"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "default": "#1566E0",
+      "label": "Border color"
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "min": 2,
+      "max": 16,
+      "step": 1,
+      "default": 6,
+      "label": "Border width"
+    },
+    {
+      "type": "range",
+      "id": "corner_radius",
+      "min": 0,
+      "max": 48,
+      "step": 2,
+      "default": 24,
+      "label": "Corner radius"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "select",
+      "id": "padding_top",
+      "options": [
+        {
+          "value": "no-indent",
+          "label": "None"
+        },
+        {
+          "value": "xs",
+          "label": "Extra small"
+        },
+        {
+          "value": "s",
+          "label": "Small"
+        },
+        {
+          "value": "m",
+          "label": "Medium"
+        },
+        {
+          "value": "l",
+          "label": "Large"
+        },
+        {
+          "value": "xl",
+          "label": "Extra large"
+        }
+      ],
+      "default": "m",
+      "label": "Top padding"
+    },
+    {
+      "type": "select",
+      "id": "padding_bottom",
+      "options": [
+        {
+          "value": "no-indent",
+          "label": "None"
+        },
+        {
+          "value": "xs",
+          "label": "Extra small"
+        },
+        {
+          "value": "s",
+          "label": "Small"
+        },
+        {
+          "value": "m",
+          "label": "Medium"
+        },
+        {
+          "value": "l",
+          "label": "Large"
+        },
+        {
+          "value": "xl",
+          "label": "Extra large"
+        }
+      ],
+      "default": "m",
+      "label": "Bottom padding"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Homepage hero"
+    }
+  ]
+}
+{% endschema %}
