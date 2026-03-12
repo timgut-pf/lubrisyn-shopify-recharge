@@ -1272,6 +1272,80 @@
         "margin_top": "no-indent",
         "margin_bottom": "no-indent"
       }
+    },
+    "1773345116548505ed": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_7df7632_LdrYPq": {
+          "type": "ai_gen_block_7df7632",
+          "settings": {
+            "desktop_width_percent": 100,
+            "section_padding": 40,
+            "columns_desktop": 3,
+            "columns_mobile": "1",
+            "grid_gap": 20,
+            "show_filters": true,
+            "filter_position": "left",
+            "filter_width": 250,
+            "filter_text_color": "#000000",
+            "filter_border_color": "#e0e0e0",
+            "clear_button_color": "#278BFF",
+            "initial_product_count": 9,
+            "products_per_load": 9,
+            "show_vendor": true,
+            "card_background": "#ffffff",
+            "card_border_radius": 8,
+            "title_color": "#000000",
+            "vendor_color": "#666666",
+            "price_color": "#000000",
+            "compare_price_color": "#999999",
+            "load_more_text": "Load more products",
+            "button_background": "#278BFF",
+            "button_hover_background": "#011624",
+            "button_text_color": "#ffffff",
+            "button_border_radius": 6
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_7df7632_LdrYPq"
+      ],
+      "settings": {}
+    },
+    "177334597680badd1e": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_11536c5_jajqhA": {
+          "type": "ai_gen_block_11536c5",
+          "settings": {
+            "collection_1": "lubrisynha-for-pets",
+            "collection_1_label": "For Pets",
+            "collection_2": "lubrisynha-livestock",
+            "collection_2_label": "For Large Animals",
+            "collection_3": "lubrisynha-for-you",
+            "collection_3_label": "For People",
+            "collection_4": "lubrisyn-ha-merch",
+            "collection_4_label": "Topical",
+            "collection_5": "lubrisynha-gear",
+            "collection_5_label": "Gear",
+            "color_scheme": "background-4",
+            "filter_text_color": "#011624",
+            "filter_border_color": "#EBEBEB",
+            "card_background": "#FFFFFF",
+            "title_color": "#011624",
+            "price_color": "#011624",
+            "button_background": "#278BFF",
+            "button_text_color": "#FFFFFF",
+            "button_hover_background": "#011624"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_11536c5_jajqhA"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -1291,6 +1365,8 @@
     "featured_blog",
     "collapsible-content",
     "dbcf4ca6-29ae-4aed-8b82-8aa2e635dbd1",
-    "4278ab67-4797-4eb2-af1a-1b66b66e6cc3"
+    "4278ab67-4797-4eb2-af1a-1b66b66e6cc3",
+    "1773345116548505ed",
+    "177334597680badd1e"
   ]
 }
