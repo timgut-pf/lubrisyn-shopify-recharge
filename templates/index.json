@@ -9,6 +9,40 @@
  */
 {
   "sections": {
+    "177334597680badd1e": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_11536c5_jajqhA": {
+          "type": "ai_gen_block_11536c5",
+          "settings": {
+            "collection_1": "lubrisynha-for-pets",
+            "collection_1_label": "For Pets",
+            "collection_2": "lubrisynha-livestock",
+            "collection_2_label": "For Large Animals",
+            "collection_3": "lubrisynha-for-you",
+            "collection_3_label": "For People",
+            "collection_4": "lubrisyn-ha-merch",
+            "collection_4_label": "Topical",
+            "collection_5": "lubrisynha-gear",
+            "collection_5_label": "Gear",
+            "color_scheme": "background-4",
+            "filter_text_color": "#011624",
+            "filter_border_color": "#ebebeb",
+            "card_background": "#ffffff",
+            "title_color": "#011624",
+            "price_color": "#011624",
+            "button_background": "#278bff",
+            "button_text_color": "#ffffff",
+            "button_hover_background": "#011624"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_11536c5_jajqhA"
+      ],
+      "settings": {}
+    },
     "949d30b1-b9c8-423e-8557-b319d33632b7": {
       "type": "slideshow",
       "blocks": {
@@ -99,7 +133,6 @@
         "8b63fa73-f745-4014-86e4-c1dabe36b033",
         "8f241248-760f-4aac-a71b-5aeabd3860ea"
       ],
-      "disabled": true,
       "settings": {
         "layout": "simple",
         "header_overlay": false,
@@ -306,7 +339,6 @@
         "template--16479994478723__aa5a0c19-0cfc-41ab-872f-97abcbcb7c93-column-2",
         "template--16479994478723__aa5a0c19-0cfc-41ab-872f-97abcbcb7c93-column-3"
       ],
-      "disabled": true,
       "settings": {
         "section_type": "transparent",
         "color_scheme": "",
@@ -597,6 +629,7 @@
     },
     "9b376f88-6df0-4ceb-ac6f-790180cdfe62": {
       "type": "popular-products",
+      "disabled": true,
       "settings": {
         "color_scheme": "background-4",
         "enable_border": false,
@@ -635,6 +668,7 @@
     },
     "9b794cb4-959e-4864-a905-02fe62099f8d": {
       "type": "countdown",
+      "disabled": true,
       "settings": {
         "color_scheme": "",
         "enable_shadow": false,
@@ -811,6 +845,7 @@
         "template--15231063785533__3859f7da-2c47-41d0-aef6-90d67e18eea1-tags-1",
         "template--15231063785533__3859f7da-2c47-41d0-aef6-90d67e18eea1-buy_buttons-1"
       ],
+      "disabled": true,
       "settings": {
         "subheading": "Featured product",
         "subheading_style": "subtitle",
@@ -885,6 +920,7 @@
         "template--16479994478723__05d5190a-23b2-40f6-a028-d5a6cbf04c7b-column-2",
         "template--16479994478723__05d5190a-23b2-40f6-a028-d5a6cbf04c7b-column-3"
       ],
+      "disabled": true,
       "settings": {
         "layout": "columns",
         "block_type": "subtle",
@@ -915,6 +951,7 @@
     },
     "image-banner": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "full_width": false,
         "color_scheme": "background-3",
@@ -1043,6 +1080,7 @@
     },
     "featured_blog": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "blog": "",
         "color_scheme": "background-4",
@@ -1123,6 +1161,7 @@
         "block_3",
         "20d89e0c-5806-43b3-9510-3d6676afbedc"
       ],
+      "disabled": true,
       "settings": {
         "layout": "border",
         "color_scheme": "",
@@ -1150,6 +1189,7 @@
     },
     "dbcf4ca6-29ae-4aed-8b82-8aa2e635dbd1": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "full_width": false,
         "color_scheme": "background-2",
@@ -1228,6 +1268,7 @@
         "template--16479994478723__4278ab67-4797-4eb2-af1a-1b66b66e6cc3-column-5",
         "template--16479994478723__4278ab67-4797-4eb2-af1a-1b66b66e6cc3-column-11"
       ],
+      "disabled": true,
       "settings": {
         "section_type": "bottom",
         "color_scheme": "",
@@ -1289,7 +1330,7 @@
             "filter_width": 250,
             "filter_text_color": "#000000",
             "filter_border_color": "#e0e0e0",
-            "clear_button_color": "#278BFF",
+            "clear_button_color": "#278bff",
             "initial_product_count": 9,
             "products_per_load": 9,
             "show_vendor": true,
@@ -1300,7 +1341,7 @@
             "price_color": "#000000",
             "compare_price_color": "#999999",
             "load_more_text": "Load more products",
-            "button_background": "#278BFF",
+            "button_background": "#278bff",
             "button_hover_background": "#011624",
             "button_text_color": "#ffffff",
             "button_border_radius": 6
@@ -1311,44 +1352,12 @@
       "block_order": [
         "ai_gen_block_7df7632_LdrYPq"
       ],
-      "settings": {}
-    },
-    "177334597680badd1e": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_11536c5_jajqhA": {
-          "type": "ai_gen_block_11536c5",
-          "settings": {
-            "collection_1": "lubrisynha-for-pets",
-            "collection_1_label": "For Pets",
-            "collection_2": "lubrisynha-livestock",
-            "collection_2_label": "For Large Animals",
-            "collection_3": "lubrisynha-for-you",
-            "collection_3_label": "For People",
-            "collection_4": "lubrisyn-ha-merch",
-            "collection_4_label": "Topical",
-            "collection_5": "lubrisynha-gear",
-            "collection_5_label": "Gear",
-            "color_scheme": "background-4",
-            "filter_text_color": "#011624",
-            "filter_border_color": "#EBEBEB",
-            "card_background": "#FFFFFF",
-            "title_color": "#011624",
-            "price_color": "#011624",
-            "button_background": "#278BFF",
-            "button_text_color": "#FFFFFF",
-            "button_hover_background": "#011624"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_11536c5_jajqhA"
-      ],
+      "disabled": true,
       "settings": {}
     }
   },
   "order": [
+    "177334597680badd1e",
     "949d30b1-b9c8-423e-8557-b319d33632b7",
     "aa66337f-82f0-4c84-aea6-b5ef91ad5d40",
     "aa5a0c19-0cfc-41ab-872f-97abcbcb7c93",
@@ -1366,7 +1375,6 @@
     "collapsible-content",
     "dbcf4ca6-29ae-4aed-8b82-8aa2e635dbd1",
     "4278ab67-4797-4eb2-af1a-1b66b66e6cc3",
-    "1773345116548505ed",
-    "177334597680badd1e"
+    "1773345116548505ed"
   ]
 }
