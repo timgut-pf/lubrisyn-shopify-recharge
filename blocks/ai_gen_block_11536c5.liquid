@@ -1,0 +1,749 @@
+{% doc %}
+  @prompt
+    Update the existing product collection filtering block to:
+    
+    1. Add a color scheme selector setting that allows choosing from the theme's predefined color schemes - this should be added alongside the existing individual color settings (filter_text_color, card_background, title_color, button_background, etc.), not replacing them
+    
+    2. Remove vendor filtering functionality - only keep these filters: collection/category filters (For Pets, For Large Animals, For People, Topical, Gear), Availability filter, and Price filter
+    
+    3. Keep all other existing functionality including the product grid display, "Select Size" buttons, price ranges ($35 - $200), sorting options, and grid/list view toggle
+    
+    The block should maintain its current design and layout while adding the color scheme option and removing vendor filters., I like this UI, but no products are loading by default. All products should load by default. I should also be able to associate a particular collection with each "Category", and that headline should say "Collections" rather than Category.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% assign all_products = '' | split: '' %}
+
+{% if block.settings.collection_1 != blank %}
+  {% for product in block.settings.collection_1.products %}
+    {% assign all_products = all_products | concat: product %}
+  {% endfor %}
+{% endif %}
+
+{% if block.settings.collection_2 != blank %}
+  {% for product in block.settings.collection_2.products %}
+    {% assign all_products = all_products | concat: product %}
+  {% endfor %}
+{% endif %}
+
+{% if block.settings.collection_3 != blank %}
+  {% for product in block.settings.collection_3.products %}
+    {% assign all_products = all_products | concat: product %}
+  {% endfor %}
+{% endif %}
+
+{% if block.settings.collection_4 != blank %}
+  {% for product in block.settings.collection_4.products %}
+    {% assign all_products = all_products | concat: product %}
+  {% endfor %}
+{% endif %}
+
+{% if block.settings.collection_5 != blank %}
+  {% for product in block.settings.collection_5.products %}
+    {% assign all_products = all_products | concat: product %}
+  {% endfor %}
+{% endif %}
+
+{% style %}
+  .ai-product-filter-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+  }
+
+  .ai-product-filter-container-{{ ai_gen_id }} {
+    display: flex;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .ai-filter-sidebar-{{ ai_gen_id }} {
+    width: 280px;
+    flex-shrink: 0;
+  }
+
+  .ai-filter-group-{{ ai_gen_id }} {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid {{ block.settings.filter_border_color }};
+  }
+
+  .ai-filter-group-{{ ai_gen_id }}:last-child {
+    border-bottom: none;
+  }
+
+  .ai-filter-title-{{ ai_gen_id }} {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: {{ block.settings.filter_text_color }};
+  }
+
+  .ai-filter-option-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .ai-filter-checkbox-{{ ai_gen_id }} {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .ai-filter-label-{{ ai_gen_id }} {
+    font-size: 14px;
+    color: {{ block.settings.filter_text_color }};
+    cursor: pointer;
+  }
+
+  .ai-price-inputs-{{ ai_gen_id }} {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .ai-price-input-{{ ai_gen_id }} {
+    width: 100px;
+    padding: 8px;
+    border: 1px solid {{ block.settings.filter_border_color }};
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  .ai-products-section-{{ ai_gen_id }} {
+    flex: 1;
+  }
+
+  .ai-products-header-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .ai-products-count-{{ ai_gen_id }} {
+    font-size: 14px;
+    color: {{ block.settings.filter_text_color }};
+  }
+
+  .ai-products-controls-{{ ai_gen_id }} {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .ai-sort-select-{{ ai_gen_id }} {
+    padding: 8px 12px;
+    border: 1px solid {{ block.settings.filter_border_color }};
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: {{ block.settings.card_background }};
+    color: {{ block.settings.filter_text_color }};
+    cursor: pointer;
+  }
+
+  .ai-view-toggle-{{ ai_gen_id }} {
+    display: flex;
+    gap: 5px;
+  }
+
+  .ai-view-btn-{{ ai_gen_id }} {
+    padding: 8px 12px;
+    border: 1px solid {{ block.settings.filter_border_color }};
+    background-color: {{ block.settings.card_background }};
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .ai-view-btn-{{ ai_gen_id }}.active {
+    background-color: {{ block.settings.button_background }};
+    color: {{ block.settings.button_text_color }};
+  }
+
+  .ai-products-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+  }
+
+  .ai-products-grid-{{ ai_gen_id }}.list-view {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-product-card-{{ ai_gen_id }} {
+    background-color: {{ block.settings.card_background }};
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .ai-product-card-{{ ai_gen_id }}:hover {
+    transform: translateY(-5px);
+  }
+
+  .ai-product-image-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+
+  .ai-product-info-{{ ai_gen_id }} {
+    padding: 15px;
+  }
+
+  .ai-product-title-{{ ai_gen_id }} {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: {{ block.settings.title_color }};
+  }
+
+  .ai-product-price-{{ ai_gen_id }} {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: {{ block.settings.price_color }};
+  }
+
+  .ai-product-button-{{ ai_gen_id }} {
+    width: 100%;
+    padding: 10px;
+    background-color: {{ block.settings.button_background }};
+    color: {{ block.settings.button_text_color }};
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+
+  .ai-product-button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_background }};
+  }
+
+  .ai-list-view-card-{{ ai_gen_id }} {
+    display: flex;
+    gap: 20px;
+  }
+
+  .ai-list-view-card-{{ ai_gen_id }} .ai-product-image-{{ ai_gen_id }} {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+  }
+
+  .ai-list-view-card-{{ ai_gen_id }} .ai-product-info-{{ ai_gen_id }} {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .ai-empty-state-{{ ai_gen_id }} {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    color: {{ block.settings.filter_text_color }};
+  }
+
+  .ai-empty-state-{{ ai_gen_id }} h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .ai-empty-state-{{ ai_gen_id }} p {
+    font-size: 14px;
+    opacity: 0.7;
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-product-filter-container-{{ ai_gen_id }} {
+      flex-direction: column;
+    }
+
+    .ai-filter-sidebar-{{ ai_gen_id }} {
+      width: 100%;
+    }
+
+    .ai-products-grid-{{ ai_gen_id }} {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .ai-list-view-card-{{ ai_gen_id }} {
+      flex-direction: column;
+    }
+
+    .ai-list-view-card-{{ ai_gen_id }} .ai-product-image-{{ ai_gen_id }} {
+      width: 100%;
+    }
+  }
+{% endstyle %}
+
+<product-collection-filter-{{ ai_gen_id }} class="ai-product-filter-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-product-filter-container-{{ ai_gen_id }}">
+    <aside class="ai-filter-sidebar-{{ ai_gen_id }}">
+      <div class="ai-filter-group-{{ ai_gen_id }}">
+        <h3 class="ai-filter-title-{{ ai_gen_id }}">Collections</h3>
+        {% if block.settings.collection_1 != blank %}
+          <label class="ai-filter-option-{{ ai_gen_id }}">
+            <input type="checkbox" class="ai-filter-checkbox-{{ ai_gen_id }}" data-filter="collection" value="collection-1" data-collection-handle="{{ block.settings.collection_1.handle }}">
+            <span class="ai-filter-label-{{ ai_gen_id }}">{{ block.settings.collection_1_label | default: block.settings.collection_1.title }}</span>
+          </label>
+        {% endif %}
+        {% if block.settings.collection_2 != blank %}
+          <label class="ai-filter-option-{{ ai_gen_id }}">
+            <input type="checkbox" class="ai-filter-checkbox-{{ ai_gen_id }}" data-filter="collection" value="collection-2" data-collection-handle="{{ block.settings.collection_2.handle }}">
+            <span class="ai-filter-label-{{ ai_gen_id }}">{{ block.settings.collection_2_label | default: block.settings.collection_2.title }}</span>
+          </label>
+        {% endif %}
+        {% if block.settings.collection_3 != blank %}
+          <label class="ai-filter-option-{{ ai_gen_id }}">
+            <input type="checkbox" class="ai-filter-checkbox-{{ ai_gen_id }}" data-filter="collection" value="collection-3" data-collection-handle="{{ block.settings.collection_3.handle }}">
+            <span class="ai-filter-label-{{ ai_gen_id }}">{{ block.settings.collection_3_label | default: block.settings.collection_3.title }}</span>
+          </label>
+        {% endif %}
+        {% if block.settings.collection_4 != blank %}
+          <label class="ai-filter-option-{{ ai_gen_id }}">
+            <input type="checkbox" class="ai-filter-checkbox-{{ ai_gen_id }}" data-filter="collection" value="collection-4" data-collection-handle="{{ block.settings.collection_4.handle }}">
+            <span class="ai-filter-label-{{ ai_gen_id }}">{{ block.settings.collection_4_label | default: block.settings.collection_4.title }}</span>
+          </label>
+        {% endif %}
+        {% if block.settings.collection_5 != blank %}
+          <label class="ai-filter-option-{{ ai_gen_id }}">
+            <input type="checkbox" class="ai-filter-checkbox-{{ ai_gen_id }}" data-filter="collection" value="collection-5" data-collection-handle="{{ block.settings.collection_5.handle }}">
+            <span class="ai-filter-label-{{ ai_gen_id }}">{{ block.settings.collection_5_label | default: block.settings.collection_5.title }}</span>
+          </label>
+        {% endif %}
+      </div>
+
+      <div class="ai-filter-group-{{ ai_gen_id }}">
+        <h3 class="ai-filter-title-{{ ai_gen_id }}">Availability</h3>
+        <label class="ai-filter-option-{{ ai_gen_id }}">
+          <input type="checkbox" class="ai-filter-checkbox-{{ ai_gen_id }}" data-filter="availability" value="in-stock">
+          <span class="ai-filter-label-{{ ai_gen_id }}">In Stock</span>
+        </label>
+        <label class="ai-filter-option-{{ ai_gen_id }}">
+          <input type="checkbox" class="ai-filter-checkbox-{{ ai_gen_id }}" data-filter="availability" value="out-of-stock">
+          <span class="ai-filter-label-{{ ai_gen_id }}">Out of Stock</span>
+        </label>
+      </div>
+
+      <div class="ai-filter-group-{{ ai_gen_id }}">
+        <h3 class="ai-filter-title-{{ ai_gen_id }}">Price Range</h3>
+        <div class="ai-price-inputs-{{ ai_gen_id }}">
+          <input type="number" class="ai-price-input-{{ ai_gen_id }}" id="min-price-{{ ai_gen_id }}" placeholder="$35" min="35" max="200">
+          <span>-</span>
+          <input type="number" class="ai-price-input-{{ ai_gen_id }}" id="max-price-{{ ai_gen_id }}" placeholder="$200" min="35" max="200">
+        </div>
+      </div>
+    </aside>
+
+    <main class="ai-products-section-{{ ai_gen_id }}">
+      <div class="ai-products-header-{{ ai_gen_id }}">
+        <div class="ai-products-count-{{ ai_gen_id }}">
+          <span id="product-count-{{ ai_gen_id }}">{{ all_products.size }}</span> products
+        </div>
+        <div class="ai-products-controls-{{ ai_gen_id }}">
+          <select class="ai-sort-select-{{ ai_gen_id }}" id="sort-select-{{ ai_gen_id }}">
+            <option value="featured">Featured</option>
+            <option value="price-low-high">Price: Low to High</option>
+            <option value="price-high-low">Price: High to Low</option>
+            <option value="title-a-z">Title: A-Z</option>
+            <option value="title-z-a">Title: Z-A</option>
+            <option value="date-new-old">Date: New to Old</option>
+            <option value="date-old-new">Date: Old to New</option>
+          </select>
+          <div class="ai-view-toggle-{{ ai_gen_id }}">
+            <button class="ai-view-btn-{{ ai_gen_id }} active" data-view="grid">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                <rect x="2" y="2" width="7" height="7"/>
+                <rect x="11" y="2" width="7" height="7"/>
+                <rect x="2" y="11" width="7" height="7"/>
+                <rect x="11" y="11" width="7" height="7"/>
+              </svg>
+            </button>
+            <button class="ai-view-btn-{{ ai_gen_id }}" data-view="list">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                <rect x="2" y="3" width="16" height="3"/>
+                <rect x="2" y="8" width="16" height="3"/>
+                <rect x="2" y="13" width="16" height="3"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="ai-products-grid-{{ ai_gen_id }}" id="products-grid-{{ ai_gen_id }}">
+        {% if all_products.size > 0 %}
+          {% for product in all_products %}
+            {% assign product_collections = '' %}
+            {% for collection in product.collections %}
+              {% if collection.handle == block.settings.collection_1.handle %}
+                {% assign product_collections = product_collections | append: 'collection-1,' %}
+              {% endif %}
+              {% if collection.handle == block.settings.collection_2.handle %}
+                {% assign product_collections = product_collections | append: 'collection-2,' %}
+              {% endif %}
+              {% if collection.handle == block.settings.collection_3.handle %}
+                {% assign product_collections = product_collections | append: 'collection-3,' %}
+              {% endif %}
+              {% if collection.handle == block.settings.collection_4.handle %}
+                {% assign product_collections = product_collections | append: 'collection-4,' %}
+              {% endif %}
+              {% if collection.handle == block.settings.collection_5.handle %}
+                {% assign product_collections = product_collections | append: 'collection-5,' %}
+              {% endif %}
+            {% endfor %}
+            
+            <div class="ai-product-card-{{ ai_gen_id }}" 
+                 data-collections="{{ product_collections }}"
+                 data-price="{{ product.price | money_without_currency | remove: ',' }}"
+                 data-available="{{ product.available }}"
+                 data-title="{{ product.title }}"
+                 data-date="{{ product.published_at }}"
+                 data-product-id="{{ product.id }}">
+              {% if product.featured_image %}
+                <img src="{{ product.featured_image | image_url: width: 600 }}" 
+                     alt="{{ product.title }}" 
+                     class="ai-product-image-{{ ai_gen_id }}"
+                     loading="lazy">
+              {% else %}
+                <div class="ai-product-image-{{ ai_gen_id }}" style="background-color: #f0f0f0; display: flex; align-items: center; justify-content: center;">
+                  {{ 'product-1' | placeholder_svg_tag }}
+                </div>
+              {% endif %}
+              <div class="ai-product-info-{{ ai_gen_id }}">
+                <h3 class="ai-product-title-{{ ai_gen_id }}">{{ product.title }}</h3>
+                <div class="ai-product-price-{{ ai_gen_id }}">{{ product.price | money }}</div>
+                <a href="{{ product.url }}" class="ai-product-button-{{ ai_gen_id }}" style="display: block; text-align: center; text-decoration: none;">Select Size</a>
+              </div>
+            </div>
+          {% endfor %}
+        {% else %}
+          <div class="ai-empty-state-{{ ai_gen_id }}">
+            <h3>No products yet</h3>
+            <p>Add collections in the block settings to display products here.</p>
+          </div>
+        {% endif %}
+      </div>
+    </main>
+  </div>
+</product-collection-filter-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class ProductCollectionFilter{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.filters = {
+          collection: [],
+          availability: [],
+          priceMin: null,
+          priceMax: null
+        };
+        this.currentSort = 'featured';
+        this.currentView = 'grid';
+        this.allProducts = [];
+      }
+
+      connectedCallback() {
+        this.allProducts = Array.from(this.querySelectorAll('.ai-product-card-{{ ai_gen_id }}'));
+        this.setupEventListeners();
+        this.updateProductCount(this.allProducts.length);
+      }
+
+      setupEventListeners() {
+        const checkboxes = this.querySelectorAll('.ai-filter-checkbox-{{ ai_gen_id }}');
+        checkboxes.forEach(checkbox => {
+          checkbox.addEventListener('change', () => this.handleFilterChange());
+        });
+
+        const minPrice = this.querySelector('#min-price-{{ ai_gen_id }}');
+        const maxPrice = this.querySelector('#max-price-{{ ai_gen_id }}');
+        if (minPrice) minPrice.addEventListener('input', () => this.handlePriceChange());
+        if (maxPrice) maxPrice.addEventListener('input', () => this.handlePriceChange());
+
+        const sortSelect = this.querySelector('#sort-select-{{ ai_gen_id }}');
+        if (sortSelect) {
+          sortSelect.addEventListener('change', (e) => {
+            this.currentSort = e.target.value;
+            this.applyFilters();
+          });
+        }
+
+        const viewButtons = this.querySelectorAll('.ai-view-btn-{{ ai_gen_id }}');
+        viewButtons.forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            this.currentView = e.currentTarget.dataset.view;
+            this.toggleView();
+          });
+        });
+      }
+
+      handleFilterChange() {
+        this.filters.collection = Array.from(
+          this.querySelectorAll('.ai-filter-checkbox-{{ ai_gen_id }}[data-filter="collection"]:checked')
+        ).map(cb => cb.value);
+
+        this.filters.availability = Array.from(
+          this.querySelectorAll('.ai-filter-checkbox-{{ ai_gen_id }}[data-filter="availability"]:checked')
+        ).map(cb => cb.value);
+
+        this.applyFilters();
+      }
+
+      handlePriceChange() {
+        const minPrice = this.querySelector('#min-price-{{ ai_gen_id }}');
+        const maxPrice = this.querySelector('#max-price-{{ ai_gen_id }}');
+        
+        this.filters.priceMin = minPrice.value ? parseFloat(minPrice.value) : null;
+        this.filters.priceMax = maxPrice.value ? parseFloat(maxPrice.value) : null;
+
+        this.applyFilters();
+      }
+
+      applyFilters() {
+        const products = Array.from(this.querySelectorAll('.ai-product-card-{{ ai_gen_id }}'));
+        const seenProductIds = new Set();
+        let visibleCount = 0;
+
+        products.forEach(product => {
+          const productId = product.dataset.productId;
+          
+          if (seenProductIds.has(productId)) {
+            product.style.display = 'none';
+            return;
+          }
+
+          let show = true;
+
+          if (this.filters.collection.length > 0) {
+            const productCollections = product.dataset.collections.split(',').filter(c => c);
+            const hasMatch = this.filters.collection.some(col => 
+              productCollections.includes(col)
+            );
+            if (!hasMatch) show = false;
+          }
+
+          if (this.filters.availability.length > 0) {
+            const isAvailable = product.dataset.available === 'true';
+            const shouldShowInStock = this.filters.availability.includes('in-stock');
+            const shouldShowOutOfStock = this.filters.availability.includes('out-of-stock');
+            
+            if (shouldShowInStock && !isAvailable) show = false;
+            if (shouldShowOutOfStock && isAvailable) show = false;
+            if (shouldShowInStock && shouldShowOutOfStock) show = true;
+          }
+
+          if (this.filters.priceMin !== null || this.filters.priceMax !== null) {
+            const price = parseFloat(product.dataset.price);
+            if (this.filters.priceMin !== null && price < this.filters.priceMin) show = false;
+            if (this.filters.priceMax !== null && price > this.filters.priceMax) show = false;
+          }
+
+          if (show) {
+            seenProductIds.add(productId);
+            product.style.display = '';
+            visibleCount++;
+          } else {
+            product.style.display = 'none';
+          }
+        });
+
+        this.sortProducts(products);
+        this.updateProductCount(visibleCount);
+      }
+
+      sortProducts(products) {
+        const grid = this.querySelector('#products-grid-{{ ai_gen_id }}');
+        const visibleProducts = products.filter(p => p.style.display !== 'none');
+
+        visibleProducts.sort((a, b) => {
+          switch (this.currentSort) {
+            case 'price-low-high':
+              return parseFloat(a.dataset.price) - parseFloat(b.dataset.price);
+            case 'price-high-low':
+              return parseFloat(b.dataset.price) - parseFloat(a.dataset.price);
+            case 'title-a-z':
+              return a.dataset.title.localeCompare(b.dataset.title);
+            case 'title-z-a':
+              return b.dataset.title.localeCompare(a.dataset.title);
+            case 'date-new-old':
+              return new Date(b.dataset.date) - new Date(a.dataset.date);
+            case 'date-old-new':
+              return new Date(a.dataset.date) - new Date(b.dataset.date);
+            default:
+              return 0;
+          }
+        });
+
+        visibleProducts.forEach(product => grid.appendChild(product));
+      }
+
+      updateProductCount(count) {
+        const countElement = this.querySelector('#product-count-{{ ai_gen_id }}');
+        if (countElement) {
+          countElement.textContent = count;
+        }
+      }
+
+      toggleView() {
+        const grid = this.querySelector('#products-grid-{{ ai_gen_id }}');
+        const buttons = this.querySelectorAll('.ai-view-btn-{{ ai_gen_id }}');
+        const cards = this.querySelectorAll('.ai-product-card-{{ ai_gen_id }}');
+
+        buttons.forEach(btn => {
+          btn.classList.toggle('active', btn.dataset.view === this.currentView);
+        });
+
+        if (this.currentView === 'list') {
+          grid.classList.add('list-view');
+          cards.forEach(card => {
+            card.classList.add('ai-list-view-card-{{ ai_gen_id }}');
+          });
+        } else {
+          grid.classList.remove('list-view');
+          cards.forEach(card => {
+            card.classList.remove('ai-list-view-card-{{ ai_gen_id }}');
+          });
+        }
+      }
+    }
+
+    customElements.define('product-collection-filter-{{ ai_gen_id }}', ProductCollectionFilter{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Product collection filter",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Collections"
+    },
+    {
+      "type": "collection",
+      "id": "collection_1",
+      "label": "Collection 1"
+    },
+    {
+      "type": "text",
+      "id": "collection_1_label",
+      "label": "Collection 1 label"
+    },
+    {
+      "type": "collection",
+      "id": "collection_2",
+      "label": "Collection 2"
+    },
+    {
+      "type": "text",
+      "id": "collection_2_label",
+      "label": "Collection 2 label"
+    },
+    {
+      "type": "collection",
+      "id": "collection_3",
+      "label": "Collection 3"
+    },
+    {
+      "type": "text",
+      "id": "collection_3_label",
+      "label": "Collection 3 label"
+    },
+    {
+      "type": "collection",
+      "id": "collection_4",
+      "label": "Collection 4"
+    },
+    {
+      "type": "text",
+      "id": "collection_4_label",
+      "label": "Collection 4 label"
+    },
+    {
+      "type": "collection",
+      "id": "collection_5",
+      "label": "Collection 5"
+    },
+    {
+      "type": "text",
+      "id": "collection_5_label",
+      "label": "Collection 5 label"
+    },
+    {
+      "type": "header",
+      "content": "Color scheme"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "Custom colors"
+    },
+    {
+      "type": "color",
+      "id": "filter_text_color",
+      "label": "Filter text",
+      "default": "#011624"
+    },
+    {
+      "type": "color",
+      "id": "filter_border_color",
+      "label": "Filter border",
+      "default": "#EBEBEB"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Card background",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Product title",
+      "default": "#011624"
+    },
+    {
+      "type": "color",
+      "id": "price_color",
+      "label": "Price",
+      "default": "#011624"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "Button background",
+      "default": "#278BFF"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_background",
+      "label": "Button hover background",
+      "default": "#011624"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product collection filter"
+    }
+  ]
+}
+{% endschema %}
