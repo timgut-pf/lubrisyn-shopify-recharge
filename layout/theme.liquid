@@ -449,7 +449,7 @@ dir="{% render 'direction' %}"
     </script>
   </head>
 
-  <body class="template-{{ template.name }} template-{{ template | replace: '.', '-' }}">
+  <body class="site-shell page-type-{{ request.page_type }} template-{{ template.name }} template-{{ template | replace: '.', '-' }}">
     <a class="skip-to-content-link button button--primary visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
